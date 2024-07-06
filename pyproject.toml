@@ -28,8 +28,8 @@ install_requires = [
 [tool.robotpy-build.static_libs."urcl_driver".maven_lib_download]
 artifact_id = "URCL-driver"
 group_id = "org.littletonrobotics.urcl"
-repo_url = "https://raw.githubusercontent.com/Mechanical-Advantage/URCL/2024.0.1"
-version = "2024.0.1"
+repo_url = "https://raw.githubusercontent.com/Mechanical-Advantage/URCL/2024.1.0"
+version = "2024.1.0"
 libs = [
     "URCLDriver",
 ]
@@ -37,8 +37,8 @@ libs = [
 [tool.robotpy-build.wrappers."urcl".maven_lib_download]
 artifact_id = "URCL-cpp"
 group_id = "org.littletonrobotics.urcl"
-repo_url = "https://raw.githubusercontent.com/Mechanical-Advantage/URCL/2024.0.1"
-version = "2024.0.1"
+repo_url = "https://raw.githubusercontent.com/Mechanical-Advantage/URCL/2024.1.0"
+version = "2024.1.0"
 use_sources = true
 sources = [
     "URCL.cpp",
