@@ -1,11 +1,11 @@
 [build-system]
 requires = [
-    "robotpy-build~=2024.0.0",
-    "pyntcore<2025.0.0,>=2024.1.1",
-    "robotpy-hal<2025.0.0,>=2024.1.1",
-    "robotpy-wpimath<2025.0.0,>=2024.1.1",
-    "robotpy-wpiutil<2025.0.0,>=2024.1.1",
-    "wpilib<2025.0.0,>=2024.1.1",
+    "robotpy-build~=2025.0.0",
+    "pyntcore<2026,>=2025.1.1",
+    "robotpy-hal<2026,>=2025.1.1",
+    "robotpy-wpimath<2026,>=2025.1.1",
+    "robotpy-wpiutil<2026,>=2025.1.1",
+    "wpilib<2026,>=2025.1.1",
 ]
 
 [tool.robotpy-build]
@@ -19,17 +19,17 @@ author_email = "robotpy@googlegroups.com"
 url = "https://github.com/robotpy/robotpy-urcl"
 license = "MIT"
 install_requires = [
-    "pyntcore<2025.0.0,>=2024.1.1",
-    "robotpy-hal<2025.0.0,>=2024.1.1",
-    "robotpy-wpiutil<2025.0.0,>=2024.1.1",
-    "wpilib<2025.0.0,>=2024.1.1",
+    "pyntcore<2026,>=2025.1.1",
+    "robotpy-hal<2026,>=2025.1.1",
+    "robotpy-wpiutil<2026,>=2025.1.1",
+    "wpilib<2026,>=2025.1.1",
 ]
 
 [tool.robotpy-build.static_libs."urcl_driver".maven_lib_download]
 artifact_id = "URCL-driver"
 group_id = "org.littletonrobotics.urcl"
-repo_url = "https://raw.githubusercontent.com/Mechanical-Advantage/URCL/2024.1.0"
-version = "2024.1.0"
+repo_url = "https://frcmaven.wpi.edu/artifactory/littletonrobotics-mvn-release"
+version = "2025.0.0"
 libs = [
     "URCLDriver",
 ]
@@ -37,8 +37,8 @@ libs = [
 [tool.robotpy-build.wrappers."urcl".maven_lib_download]
 artifact_id = "URCL-cpp"
 group_id = "org.littletonrobotics.urcl"
-repo_url = "https://raw.githubusercontent.com/Mechanical-Advantage/URCL/2024.1.0"
-version = "2024.1.0"
+repo_url = "https://frcmaven.wpi.edu/artifactory/littletonrobotics-mvn-release"
+version = "2025.0.0"
 use_sources = true
 sources = [
     "URCL.cpp",
