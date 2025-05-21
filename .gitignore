@@ -1,4 +1,4 @@
-*.py[cod]
+*.py[codi]
 *.egg-info
 __pycache__/
 
@@ -6,11 +6,9 @@ __pycache__/
 *.dylib
 *.dll
 
-/urcl/include/
-/urcl/rpy-include/
-/urcl/_init_urcl.py
-/urcl/pkgcfg.py
-
+/urcl/trampolines
+/urcl/_init__urcl.py
+/urcl/urcl.pc
 /urcl/version.py
 
 .pytest_cache/
@@ -21,3 +19,4 @@ coverage.xml
 
 build/
 dist/
+/lib
