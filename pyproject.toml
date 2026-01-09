@@ -5,8 +5,8 @@ requires = [
     "hatch-vcs",
     "semiwrap~=0.1",
     "hatch-meson~=0.1.0b2",
-    "hatch-robotpy~=0.2.0",
-    "wpilib~=2025.3.2.2",
+    "hatch-robotpy~=0.2.1",
+    "wpilib~=2026.1.1",
 ]
 
 
@@ -16,7 +16,7 @@ dynamic = ["version"]
 description = "Python wrapper for FRC Team 6328's URCL library"
 license = "MIT"
 dependencies = [
-    "wpilib~=2025.3.2.2",
+    "wpilib~=2026.1.1",
 ]
 
 [[project.authors]]
@@ -41,7 +41,7 @@ packages = ["urcl"]
 artifact_id = "URCL-driver"
 group_id = "org.littletonrobotics.urcl"
 repo_url = "https://frcmaven.wpi.edu/artifactory/littletonrobotics-mvn-release"
-version = "2025.0.1"
+version = "2026.0.0"
 staticlibs = ["URCLDriver"]
 extract_to = "lib"
 
@@ -49,7 +49,7 @@ extract_to = "lib"
 artifact_id = "URCL-cpp"
 group_id = "org.littletonrobotics.urcl"
 repo_url = "https://frcmaven.wpi.edu/artifactory/littletonrobotics-mvn-release"
-version = "2025.0.1"
+version = "2026.0.0"
 staticlibs = ["URCL"]
 extract_to = "lib"
 
@@ -61,7 +61,7 @@ extract_to = "lib"
 
 [tool.semiwrap]
 update_init = ["urcl"]
-
+scan_headers_ignore = ["URCLDriver.h"]
 
 
 [tool.semiwrap.extension_modules."urcl._urcl"]
