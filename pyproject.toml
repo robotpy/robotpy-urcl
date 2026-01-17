@@ -16,7 +16,7 @@ dynamic = ["version"]
 description = "Python wrapper for FRC Team 6328's URCL library"
 license = "MIT"
 dependencies = [
-    "wpilib~=2026.1.1",
+    "wpilib>=2026.1.1,<2027",
 ]
 
 [[project.authors]]
